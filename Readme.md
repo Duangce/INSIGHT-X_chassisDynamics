@@ -1,6 +1,6 @@
-# 系统动力学（System Dynamics）模型集合
+# 底盘动力学模型集合
 
-本仓库收集并整理了与车辆动力学相关的系统动力学模型与分析资料，主要以 MATLAB/Simulink 仿真模型和配套笔记（Live Script / Live Editor）为主，便于快速复现和二次开发。
+本仓库收集并整理了与车辆动力学相关的系统动力学模型与分析资料，主要以 MATLAB/Simulink 仿真模型，是[Insight-X](insight-x.xyz) 中底盘动力学的配套文件，可以用学习、快速复现和二次开发。
 
 ## 主要目录结构
 
@@ -17,11 +17,13 @@
 - 仿真缓存：`slprj/` 下含编译与仿真缓存文件，可忽略于版本控制或在需要时删除以节省空间。
 
 ## 如何使用
+> 本仓库使用软件： matlab-2025b, carsim-2020
 
 1. 在本地打开 MATLAB/Simulink。将工作目录切换到本仓库根目录。
 2. 打开需要的模型文件，例如：`vehicle/linear2DOF.slx` 或 `suspension/suspension4DOF.slx`。
 3. 若要查看数据处理或拟合流程，打开对应的 Live Script（`.mlx`），例如 `tire/tire_magicFormula_fit251219.mlx`。
 4. 建议在第一次打开模型前清理 `slprj/` 及 `sim/varcache/` 中的缓存（可在 MATLAB 中右键模型 -> Clean，有助于避免兼容性问题）。
+5. 考虑到版本问题，另导出了2023a版本的simulink文件，在 `兼容性_matlab-2023a版本文件`
 
 ## 许可证
 
